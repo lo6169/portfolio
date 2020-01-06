@@ -1,0 +1,242 @@
+body
+{
+    width: 80%;
+    margin-left: 10%;
+    font-family: "Arial Black", Gadget, sans-serif;
+    color: #001a47;
+    height: auto;
+}
+
+#page-nav
+{
+    width: 100%;
+    position: fixed;
+    top: 0;
+    background: #001a47;
+    z-index: 1;
+}
+
+#page-nav label, #hamburger {
+    display: none;
+}
+
+#page-nav ul
+{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+#page-nav ul li
+{
+    display: inline-block;
+    padding: 10px;
+    box-sizing: border-box;
+}
+#page-nav ul li a
+{
+    color: white;
+    text-decoration: none;
+}
+
+.me
+{
+    border-radius: 50%;
+    width: 20%;
+    margin-left: 40%;
+}
+
+.head
+{
+    font-size: 3em;
+    color: #001a47;
+    margin-top: 3%;
+    text-align: center;
+}
+
+.head2
+{
+    font-size: 2.5em;
+    color: #002b75;
+    margin-bottom: 2%;
+    text-align: center;
+}
+
+.intro
+{
+    margin-top: 1%;
+    background-color: #001a47;
+    color: white;
+    font-size: 1.7em;
+    padding: 3% 5% 1% 5%;
+    font-weight: lighter;
+    text-align: center;
+    /* top right bottom left*/
+    width: 40%;
+    margin-left: 25%;
+}
+
+.blurb
+{
+    background-color: #001a47;
+    color: white;
+    font-size: 1.4em;
+    font-family: "Helvetica";
+    padding: 0% 5% 2% 5%;
+    width: 40%;
+    text-align: center;
+    margin-left: 25%;
+}
+
+.row
+{
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 5%;
+}
+
+.row:after
+{
+    margin-top: 5%;
+    content: "";
+    clear: both;
+}
+
+.column
+{
+    float: left;
+    flex: 1;
+    width: 32%;
+    text-align: center;
+    border-radius: 25px;
+    border: 1px solid #001a47;
+    color: #002b75;
+    line-height: 250%;
+    z-index: -1;
+}
+
+.column .title
+{
+    font-size: 1.3em;
+    padding-bottom: 2%;
+}
+
+.symbols
+{
+    width: 15%;
+    padding: 2%;
+}
+
+
+
+
+
+
+/* Media queries */
+@media screen and (max-width: 768px){
+    #page-nav label
+    {
+        display: inline-block;
+        color: white;
+        background-color: #001a47;
+        font-style: normal;
+        font-size: 1.2em;
+        padding: 10px;
+    }
+
+    #page-nav ul li
+    {
+        display: block;
+    }
+    #page-nav ul li
+    {
+        border-top: 1px solid #333;
+    }
+
+    #page-nav ul
+    {
+        display: none;
+    }
+    #page-nav input:checked ~ ul
+    {
+        display: block;
+    }
+
+    .me
+    {
+        border-radius: 50%;
+        width: 50%;
+        margin-left: 25%;
+    }
+
+    .head
+    {
+        font-size: 1.5em;
+        color: #001a47;
+        margin-top: 3%;
+        text-align: center;
+    }
+
+    .head2
+    {
+        font-size: 1.25em;
+        color: #002b75;
+        margin-bottom: 2%;
+        text-align: center;
+    }
+
+    .intro
+    {
+        margin-top: 1%;
+        background-color: #001a47;
+        color: white;
+        font-size: 1.5em;
+        padding: 3% 5% 1% 5%;
+        font-weight: lighter;
+        text-align: center;
+        /* top right bottom left*/
+        width: 80%;
+        margin-left: 5%;
+    }
+
+    .blurb
+    {
+        background-color: #001a47;
+        color: white;
+        font-size: 1.25em;
+        font-family: "Helvetica";
+        padding: 0% 5% 2% 5%;
+        width: 80%;
+        text-align: center;
+        margin-left: 5%;
+    }
+
+    .row
+    {
+        width: 80%;
+        margin-left: 10%;
+    }
+
+    .column
+    {
+        width: 100%;
+        text-align: center;
+        border-radius: 25px;
+        border: 1px solid #001a47;
+        color: #002b75;
+        line-height: 250%;
+        margin-bottom: 2%;
+    }
+
+    .column .title
+    {
+        font-size: 1.3em;
+        padding-bottom: 2%;
+    }
+
+    .symbols
+    {
+        width: 40%;
+        padding: 2%;
+    }
+
+}
