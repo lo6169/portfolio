@@ -12,15 +12,15 @@
         <input type="checkbox" id="hamburger"/>
 
         <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
             <li><a href="projects.html">Projects</a></li>
             <li><a href="contact.html">Contact</a></li>
            <!-- <li><a href="reviews.html">Reviews</a></li> -->
         </ul>
     </nav>
 
-    <div class="head">
+    <div class="head" id="home">
         Front-End Developer and Designer
     </div>
     <div class="head2">
@@ -31,7 +31,7 @@
 
     <!-- PUT MOUNTAIN RANGE OR SOMETHING HERE -->
 
-    <div class="intro">
+    <div class="intro" id="about">
         Hi there, I'm Lindsey.
     </div>
     <div class="blurb">
@@ -43,6 +43,35 @@
         find a place where I can create and code, and of course, learn more
         about the world around me.
     </div>
+
+    <div class="slideshow">
+        <img src="assets/media/L.jpg" class="mySlides">
+        <img src="assets/media/I.jpg" class="mySlides">
+        <img src="assets/media/N.jpg" class="mySlides">
+        <img src="assets/media/d.jpg" class="mySlides">
+        <img src="assets/media/s.jpg" class="mySlides">
+        <img src="assets/media/e.jpg" class="mySlides">
+        <img src="assets/media/y.jpg" class="mySlides">
+        <img src="assets/media/blank.JPG" class="mySlides">
+    </div>
+
+    <script>
+        var slideIndex = 0;
+        carousel();
+
+        function carousel()
+        {
+            var i;
+            var x = document.getElementsByClassName("mySlides");
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > x.length) {slideIndex = 1}
+            x[slideIndex-1].style.display = "block";
+            setTimeout(carousel, 1000); // Change image every 2 seconds
+        }
+    </script>
 
     <div class="row">
         <div class="column">
