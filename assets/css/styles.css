@@ -62,6 +62,17 @@ body
     text-align: center;
 }
 
+.head3
+{
+    font-size: 2em;
+    color: #002b75;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    text-align: center;
+    width: 80%;
+    margin-left: 10%;
+}
+
 .intro
 {
     margin-top: 1%;
