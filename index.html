@@ -27,7 +27,7 @@
         Creator and Coder
     </div>
 
-    <img src="assets/media/picture.jpg" class="me">
+    <img src="assets/media/picture.jpg" class="me" alt="Image of myself.">
 
     <!-- PUT MOUNTAIN RANGE OR SOMETHING HERE -->
 
@@ -45,14 +45,14 @@
     </div>
 
     <div class="slideshow">
-        <img src="assets/media/L.jpg" class="mySlides">
-        <img src="assets/media/I.jpg" class="mySlides">
-        <img src="assets/media/N.jpg" class="mySlides">
-        <img src="assets/media/d.jpg" class="mySlides">
-        <img src="assets/media/s.jpg" class="mySlides">
-        <img src="assets/media/e.jpg" class="mySlides">
-        <img src="assets/media/y.jpg" class="mySlides">
-        <img src="assets/media/blank.JPG" class="mySlides">
+        <img src="assets/media/L.jpg" class="mySlides" alt="L">
+        <img src="assets/media/I.jpg" class="mySlides" alt="I">
+        <img src="assets/media/N.jpg" class="mySlides" alt="N">
+        <img src="assets/media/d.jpg" class="mySlides" alt="D">
+        <img src="assets/media/s.jpg" class="mySlides" alt="S">
+        <img src="assets/media/e.jpg" class="mySlides" alt="E">
+        <img src="assets/media/y.jpg" class="mySlides" alt="Y">
+        <img src="assets/media/blank.JPG" class="mySlides" alt="Blank">
     </div>
 
     <script>
@@ -73,13 +73,21 @@
         }
     </script>
 
-    <div class="row">
-        <div class="column">
-            <img src="assets/media/frontend.png" class="symbols">
-            <br/>
-            <div class="title">
-                Front End
-            </div>
+    <div class="skills">
+        <img src="assets/media/frontend.png" onclick="toggleFront()" class="symbols" title="Click me to view Front End Skills!">
+
+        <img src="assets/media/design.png" onclick="toggleDesign()" class="symbols"  title="Click me to view Design Skills!">
+
+        <img src="assets/media/backend.jpg" onclick="toggleBack()" class="symbols"  title="Click me to view Back End Skills!">
+    </div>
+
+
+
+    <div id="frontend">
+        <div class="skilltitle">
+            FRONT END
+        </div>
+        <div class="skilldetail">
             HTML5 <br/>
             CSS3 <br/>
             Javascript <br/>
@@ -87,25 +95,27 @@
             GitHub / GitLab <br/>
             WebStorm <br/>
         </div>
-        <div class="column">
-            <img src="assets/media/design.png" class="symbols">
+    </div>
+
+    <div id="design" style="display: none;">
+        <div class="skilltitle">
+            DESIGN
+        </div>
+        <div class="skilldetail">
             <br/>
-            <div class="title">
-                Design
-            </div>
             Adobe Photoshop <br/>
             Adobe Illustrator <br/>
             Computer Aided Design <br/>
             Traditional Pen and Paper <br/>
             <br/>
-            <br/>
         </div>
-        <div class="column">
-            <img src="assets/media/backend.jpg" class="symbols">
-            <br/>
-            <div class="title">
-                Back End
-            </div>
+    </div>
+
+    <div id="backend" style="display: none;">
+        <div class="skilltitle" >
+            BACK END
+        </div>
+        <div class="skilldetail">
             Python <br/>
             Java <br/>
             C <br/>
@@ -116,5 +126,23 @@
     </div>
 
 
+
+
+
+
+    <div class="footer">
+        Copyright Lindsey Olson 2020 <br/> <br/>
+        Connect with me: <br/>
+        <a href="https://www.github.com/lo6169" target="_blank">
+            <img src="assets/media/githublogo.png" class="contactme">
+        </a>
+        <a href= "https://www.linkedin.com/in/lindsey-olson-305788184/" target="_blank">
+            <img src="assets/media/linkedinlogo.png" class="contactme">
+        </a>
+    </div>
+
 </body>
+
+
+
 </html>

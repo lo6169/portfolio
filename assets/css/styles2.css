@@ -1,0 +1,31 @@
+.item1 { grid-area: menu; }
+.item2 { grid-area: header; }
+.item3 { grid-area: imagen; }
+.item4 { grid-area: blurb; }
+.item5 { grid-area: asl; }
+.item6 { grid-area: col1; }
+.item7 { grid-area: col2; }
+.item8 { grid-area: col3; }
+.item9 { grid-area: footer; }
+
+.grid-container {
+    display: grid;
+    grid-template-areas:
+            'menu menu menu menu menu menu menu'
+            'header header header header header header'
+            'image image image image image image'
+            'blurb blurb blurb blurb blurb blurb'
+            'asl asl asl asl asl asl'
+            'col1 col1 col2 col2 col3 col3'
+            'footer footer footer footer footer footer';
+    grid-gap: 10px;
+    background-color: #2196F3;
+    padding: 10px;
+}
+
+.grid-container > div {
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    padding: 20px 0;
+    font-size: 30px;
+}
