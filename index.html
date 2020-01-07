@@ -45,24 +45,24 @@
     </div>
 
     <div class="slideshow">
-        <img src="assets/media/L.jpg" class="mySlides" alt="L">
-        <img src="assets/media/I.jpg" class="mySlides" alt="I">
-        <img src="assets/media/N.jpg" class="mySlides" alt="N">
-        <img src="assets/media/d.jpg" class="mySlides" alt="D">
-        <img src="assets/media/s.jpg" class="mySlides" alt="S">
-        <img src="assets/media/e.jpg" class="mySlides" alt="E">
-        <img src="assets/media/y.jpg" class="mySlides" alt="Y">
+        <img src="assets/media/L.JPG" class="mySlides" alt="L">
+        <img src="assets/media/I.JPG" class="mySlides" alt="I">
+        <img src="assets/media/N.JPG" class="mySlides" alt="N">
+        <img src="assets/media/D.JPG" class="mySlides" alt="D">
+        <img src="assets/media/S.JPG" class="mySlides" alt="S">
+        <img src="assets/media/E.JPG" class="mySlides" alt="E">
+        <img src="assets/media/y.JPG" class="mySlides" alt="Y">
         <img src="assets/media/blank.JPG" class="mySlides" alt="Blank">
     </div>
 
     <script>
-        var slideIndex = 0;
+        let slideIndex = 0;
         carousel();
 
         function carousel()
         {
-            var i;
-            var x = document.getElementsByClassName("mySlides");
+            let i;
+            let x = document.getElementsByClassName("mySlides");
             for (i = 0; i < x.length; i++) {
                 x[i].style.display = "none";
             }
@@ -81,11 +81,11 @@
         Click button to see sklls
     </div>
     <div class="skills">
-        <img src="assets/media/frontend.png" onclick="toggleFront()" class="symbols" title="Click me to view Front End Skills!">
+        <img src="assets/media/frontend.png" onclick="toggleFront()" class="symbols" title="Click me to view Front End Skills!" alt="<>">
 
-        <img src="assets/media/design.png" onclick="toggleDesign()" class="symbols"  title="Click me to view Design Skills!">
+        <img src="assets/media/design.png" onclick="toggleDesign()" class="symbols"  title="Click me to view Design Skills!" alt="pencil">
 
-        <img src="assets/media/backend.jpg" onclick="toggleBack()" class="symbols"  title="Click me to view Back End Skills!">
+        <img src="assets/media/backend.jpg" onclick="toggleBack()" class="symbols"  title="Click me to view Back End Skills!" alt="tools">
     </div>
 
     <div id="frontend">
@@ -181,7 +181,9 @@
      First personal webpage project (link to page)
      -->
 
-
+    <div class="head" id="contact">
+        Contact
+    </div>
 
 
     <div class="footer">
