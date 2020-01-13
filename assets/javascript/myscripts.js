@@ -64,3 +64,20 @@ function toggleBack()
         back.style.display = "block";
     }
 }
+
+window.onscroll = function()
+{
+    scrollFunction()
+};
+
+function scrollFunction()
+{
+    if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50)
+    {
+        document.getElementById("page-nav").style.fontSize = "20px";
+    }
+    else
+    {
+        document.getElementById("page-nav").style.fontSize = "30px";
+    }
+}
