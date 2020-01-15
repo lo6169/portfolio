@@ -49,35 +49,44 @@
         about the world around me.
     </div>
 
-    <div class="slideshow">
-        <img src="assets/media/L.JPG" class="mySlides" alt="L">
-        <img src="assets/media/I.JPG" class="mySlides" alt="I">
-        <img src="assets/media/N.JPG" class="mySlides" alt="N">
-        <img src="assets/media/D.JPG" class="mySlides" alt="D">
-        <img src="assets/media/S.JPG" class="mySlides" alt="S">
-        <img src="assets/media/E.JPG" class="mySlides" alt="E">
-        <img src="assets/media/y.JPG" class="mySlides" alt="Y">
-        <img src="assets/media/blank.JPG" class="mySlides" alt="Blank">
+    <div style="text-align: center; font-size: 1em; padding-top: 3%">
+        Click letter to see the fingerspelling
     </div>
 
-    <script>
-        let slideIndex = 0;
-        carousel();
+    <div class="block_container">
+        <div class="block" onclick="showletter('L')">
+            L
+        </div>
+        <div class="block" onclick="showletter('I')">
+            I
+        </div>
+        <div class="block" onclick="showletter('N')">
+            N
+        </div>
+        <div class="block" onclick="showletter('D')">
+            D
+        </div>
+        <div class="block" onclick="showletter('S')">
+            S
+        </div>
+        <div class="block" onclick="showletter('E')">
+            E
+        </div>
+        <div class="block" onclick="showletter('Y')">
+            Y
+        </div>
+    </div>
 
-        function carousel()
-        {
-            let i;
-            let x = document.getElementsByClassName("mySlides");
-            for (i = 0; i < x.length; i++) {
-                x[i].style.display = "none";
-            }
-            slideIndex++;
-            if (slideIndex > x.length) {slideIndex = 1}
-            x[slideIndex-1].style.display = "block";
-            setTimeout(carousel, 1000); // Change image every 2 seconds
-        }
-    </script>
-
+    <div class="slideshow">
+        <img src="assets/media/L.JPG" class="mySlides" alt="L" id="L" style="display:none">
+        <img src="assets/media/I.JPG" class="mySlides" alt="I" id="I" style="display:none">
+        <img src="assets/media/N.JPG" class="mySlides" alt="N" id="N" style="display:none">
+        <img src="assets/media/D.JPG" class="mySlides" alt="D" id="D" style="display:none">
+        <img src="assets/media/S.JPG" class="mySlides" alt="S" id="S" style="display:none">
+        <img src="assets/media/E.JPG" class="mySlides" alt="E" id="E" style="display:none">
+        <img src="assets/media/y.JPG" class="mySlides" alt="Y" id="Y" style="display:none">
+        <img src="assets/media/blank.JPG" class="mySlides" alt="Blank" id="blank">
+    </div>
 
     <div class="head">
         Skills

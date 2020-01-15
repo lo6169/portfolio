@@ -264,6 +264,18 @@ a:visited
     text-align: center;
 }
 
+.block_container
+{
+    text-align: center;
+    color: #001a47;
+    font-size: 3em;
+    padding-top: 1%;
+}
+
+.block
+{
+    display: inline;
+}
 
 /* Media queries */
 @media screen and (max-width: 768px)

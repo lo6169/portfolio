@@ -81,3 +81,58 @@ function scrollFunction()
         document.getElementById("page-nav").style.fontSize = "30px";
     }
 }
+
+function showletter(letter)
+{
+    let L = document.getElementById("L");
+    let I = document.getElementById("I");
+    let N = document.getElementById("N");
+    let D = document.getElementById("D");
+    let S = document.getElementById("S");
+    let E = document.getElementById("E");
+    let Y = document.getElementById("Y");
+    let blank = document.getElementById("blank");
+
+    L.style.display = "none";
+    I.style.display = "none";
+    N.style.display = "none";
+    D.style.display = "none";
+    S.style.display = "none";
+    E.style.display = "none";
+    Y.style.display = "none";
+    blank.style.display = "none";
+
+    if(letter == "L")
+    {
+        L.style.display = "block";
+    }
+    else if (letter == "I")
+    {
+        I.style.display = "block";
+    }
+    else if (letter == "N")
+    {
+        N.style.display = "block";
+    }
+    else if (letter == "D")
+    {
+        D.style.display = "block";
+    }
+    else if (letter == "S")
+    {
+        S.style.display = "block";
+    }
+    else if (letter == "E")
+    {
+        E.style.display = "block";
+    }
+    else if (letter == "Y")
+    {
+        Y.style.display = "block";
+    }
+    else
+    {
+        blank.style.display = "block";
+    }
+}
+
