@@ -30,6 +30,7 @@ a:visited
     background: #001a47;
     z-index: 1;
     font-size: 30px;
+    height: 60px;
 }
 
 #page-nav label, #hamburger
@@ -66,7 +67,7 @@ a:visited
 {
     font-size: 3em;
     color: #001a47;
-    margin-top: 3%;
+    margin-top: 75px;
     text-align: center;
 }
 
@@ -129,6 +130,11 @@ a:visited
     border-width: 1px;
     border-radius: 25px;
     margin: 0.5%;
+}
+
+.symbols:active
+{
+    background-color: gray;
 }
 
 .slideshow
@@ -277,8 +283,17 @@ a:visited
     display: inline;
 }
 
+
+@media screen and (max-width: 1000px)
+{
+    #page-nav
+    {
+        font-size: 25px;
+    }
+}
+
 /* Media queries */
-@media screen and (max-width: 768px)
+@media screen and (max-width: 900px)
 {
     body
     {
@@ -289,6 +304,7 @@ a:visited
     #page-nav
     {
         width: 100%;
+        height: auto;
     }
 
     #page-nav label
