@@ -15,7 +15,7 @@
             <li><a href="#home">Home</a></li>
             <li><a href="#about">About</a></li>
             <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li><a href="contact.html" target="_blank">Contact</a></li>
             <li><a href="#experience">Experience</a></li>
            <!-- <li><a href="reviews.html">Reviews</a></li> -->
         </ul>
@@ -28,67 +28,25 @@
         Creator and Coder
     </div>
 
-    <img src="assets/media/picture.jpg" class="me" alt="Image of myself.">
+    <div id="totalhead">
 
-    <!-- PUT MOUNTAIN RANGE OR SOMETHING HERE -->
+        <img src="assets/media/picture.jpg" class="me" alt="Image of myself.">
 
-    <!-- Instead of the sign language animation
-     do it so that it has the name spelled out
-     and when you hover over the letter, it shows the letter-->
+        <div class="intro" id="about">
+            Hi there, I'm Lindsey.
+        </div>
+        <div class="blurb">
+            I'm a second year Web and Mobile Computing
+            student at Rochester Institute of Technology with an immersion
+            in American Sign Language and special interest in database management
+            and design. I began my coding journey in Rhode Island, and have since
+            travelled to upstate New York in the pursuit of knowledge. I hope to
+            find a place where I can create and code, and of course, learn more
+            about the world around me.
+        </div>
+    </div> <!-- End of totalhead, which is the whole header elements embodied into one group-->
 
-    <div class="intro" id="about">
-        Hi there, I'm Lindsey.
-    </div>
-    <div class="blurb">
-        I'm a second year Web and Mobile Computing
-        student at Rochester Institute of Technology with an immersion
-        in American Sign Language and special interest in database management
-        and design. I began my coding journey in Rhode Island, and have since
-        travelled to upstate New York in the pursuit of knowledge. I hope to
-        find a place where I can create and code, and of course, learn more
-        about the world around me.
-    </div>
-
-    <div style="text-align: center; font-size: 1em; padding-top: 3%">
-        Click letter to see the fingerspelling
-    </div>
-
-    <div class="block_container">
-        <div class="block" onclick="showletter('L')">
-            L
-        </div>
-        <div class="block" onclick="showletter('I')">
-            I
-        </div>
-        <div class="block" onclick="showletter('N')">
-            N
-        </div>
-        <div class="block" onclick="showletter('D')">
-            D
-        </div>
-        <div class="block" onclick="showletter('S')">
-            S
-        </div>
-        <div class="block" onclick="showletter('E')">
-            E
-        </div>
-        <div class="block" onclick="showletter('Y')">
-            Y
-        </div>
-    </div>
-
-    <div class="slideshow">
-        <img src="assets/media/L.JPG" class="mySlides" alt="L" id="L" style="display:none">
-        <img src="assets/media/I.JPG" class="mySlides" alt="I" id="I" style="display:none">
-        <img src="assets/media/N.JPG" class="mySlides" alt="N" id="N" style="display:none">
-        <img src="assets/media/D.JPG" class="mySlides" alt="D" id="D" style="display:none">
-        <img src="assets/media/S.JPG" class="mySlides" alt="S" id="S" style="display:none">
-        <img src="assets/media/E.JPG" class="mySlides" alt="E" id="E" style="display:none">
-        <img src="assets/media/y.JPG" class="mySlides" alt="Y" id="Y" style="display:none">
-        <img src="assets/media/blank.JPG" class="mySlides" alt="Blank" id="blank">
-    </div>
-
-    <div class="head">
+    <div class="head"> <!-- Beginning of skills section -->
         Skills
     </div>
     <div style="text-align: center; font-size: 1em">
@@ -142,7 +100,7 @@
             IntelliJ &#9733;&#9733;&#9733;&#9733;&#9733;<br/>
             PyCharm &#9733;&#9733;&#9733;&#9733;&#9733;<br/>
         </div>
-    </div>
+    </div> <!-- End of skills section -->
 
     <div class="head" id="projects">
         Projects
@@ -202,15 +160,6 @@
         </div>
     </div>
 
-    <div class="head" id="contact">
-        Contact
-    </div>
-    <div class="contact">
-        <img src="assets/media/linkedinlogo.png" class="symbols" alt="LinkedIn Logo"> <a href="https://www.linkedin.com/in/l-olson">LinkedIn</a><br/>
-        <img src="assets/media/githublogo.png" class="symbols" alt="Github Logo"><a href="https://www.github.com/lo6169" class="symbols">GitHub</a>  <br/>
-        <img src="assets/media/gmaillogo.png" class="symbols" alt="Gmail Logo"><a href="mailto:lolson1214@gmail.com" class="symbols">Email </a> <br/>
-    </div>
-
     <div class="head" id="experience">
         Experience
     </div>
@@ -257,6 +206,49 @@
             </div>
         </div>
     </div>
+
+    <br/>
+
+
+    <div style="text-align: center; font-size: 1em; padding-top: 3%">
+        Click letter to see the fingerspelling
+    </div>
+
+    <div class="block_container">
+        <div class="block" onclick="showletter('L')">
+            L
+        </div>
+        <div class="block" onclick="showletter('I')">
+            I
+        </div>
+        <div class="block" onclick="showletter('N')">
+            N
+        </div>
+        <div class="block" onclick="showletter('D')">
+            D
+        </div>
+        <div class="block" onclick="showletter('S')">
+            S
+        </div>
+        <div class="block" onclick="showletter('E')">
+            E
+        </div>
+        <div class="block" onclick="showletter('Y')">
+            Y
+        </div>
+    </div>
+
+    <div class="slideshow">
+        <img src="assets/media/L.JPG" class="mySlides" alt="L" id="L" style="display:none">
+        <img src="assets/media/I.JPG" class="mySlides" alt="I" id="I" style="display:none">
+        <img src="assets/media/N.JPG" class="mySlides" alt="N" id="N" style="display:none">
+        <img src="assets/media/D.JPG" class="mySlides" alt="D" id="D" style="display:none">
+        <img src="assets/media/S.JPG" class="mySlides" alt="S" id="S" style="display:none">
+        <img src="assets/media/E.JPG" class="mySlides" alt="E" id="E" style="display:none">
+        <img src="assets/media/y.JPG" class="mySlides" alt="Y" id="Y" style="display:none">
+        <img src="assets/media/blank.JPG" class="mySlides" alt="Blank" id="blank">
+    </div>
+
 
     <br/>
 

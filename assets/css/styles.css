@@ -283,6 +283,19 @@ a:visited
     display: inline;
 }
 
+#totalhead
+{
+    background-image: url('../media/stars.jpg');
+    padding: 5%;
+    box-shadow: 0 0 30px 30px white inset;
+}
+
+#\#form
+{
+    text-align: center;
+    padding: 2%;
+}
+
 
 @media screen and (max-width: 1000px)
 {
