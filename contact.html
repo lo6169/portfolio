@@ -32,7 +32,7 @@
 
     <div class="container">
         <div id="feedback">
-            <form action="#" id="form" method="post" name="form">
+            <form action = "secure_email_code.php" method="POST" onsubmit = "return validateForm();">
                 <div class="inputkind">
                     Name:
                 </div>
@@ -46,20 +46,77 @@
                 <div class="inputkind">
                     Subject
                 </div>
-                <input id="subject" name="sub" placeholder="Subject" type="text" value=""> <br/> <br/>
+                <input id="sub" name="sub" placeholder="Subject" type="text" value=""> <br/> <br/>
 
                 <div class="inputkind">
                     Comments:
                 </div>
-                <textarea id="comment" name="msg" placeholder="Please comment here"></textarea> <br/> <br/>
+                <textarea id="comment" name="comment" placeholder="Please comment here"></textarea> <br/> <br/>
 
                 <input id="send" name="submit" type="submit" value="Send">
             </form>
-            <h3><?php include "secure_email_form.php"?></h3>
         </div>
-        <!-- Feedback Form Ends Here -->
     </div>
 
+
+    <script>
+
+        function validateForm()
+        {
+            "use strict";
+            var isvalid = true;
+
+            if (document.getElementById("vname").value == '')
+            {
+                document.getElementById("vname").style.borderColor = "red";
+                document.getElementById("vname").style.backgroundColor = 'pink';
+                isvalid = false;
+            }
+
+            else
+            {
+                document.getElementById("vname").style = null;
+            }
+
+            if (document.getElementById("vemail").value == '')
+            {
+                document.getElementById("vemail").style.borderColor = "red";
+                document.getElementById("vemail").style.backgroundColor = 'pink';
+                isvalid = false;
+            }
+            else
+            {
+                document.getElementById("vemail").style = null;
+            }
+
+            if (document.getElementById("sub").value == '')
+            {
+                document.getElementById("sub").style.borderColor = "red";
+                document.getElementById("sub").style.backgroundColor = 'pink';
+                isvalid = false;
+            }
+            else
+            {
+                document.getElementById("sub").style = null;
+            }
+
+            if (document.getElementById("comment").value == '')
+            {
+                document.getElementById("comment").style.borderColor = "red";
+                document.getElementById("comment").style.backgroundColor = 'pink';
+                isvalid = false;
+            }
+            else
+            {
+                document.getElementById("comment").style = null;
+            }
+
+
+            return (isvalid);
+
+        }
+        //end of javascript function validateForm
+    </script>
 
     <div class="footer">
         © Lindsey Olson - 2020 <br/> <br/>

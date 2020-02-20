@@ -290,10 +290,12 @@ a:visited
     box-shadow: 0 0 30px 30px white inset;
 }
 
-#form
+.container
 {
-    text-align: center;
+    width: 50%;
+    margin-left: 25%;
     padding: 2%;
+    text-align: center;
 }
 
 #comment
@@ -302,11 +304,20 @@ a:visited
     height: 20em;
 }
 
-#vemail, #vname, #subject
+#vemail, #vname, #sub
 {
     width: 20em;
 }
 
+#send
+{
+    height: 2em;
+    width: 5em;
+    color: white;
+    background-color: #002b75;
+    text-align: center;
+    margin-left: 45%;
+}
 
 @media screen and (max-width: 1000px)
 {
