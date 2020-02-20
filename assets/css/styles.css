@@ -290,10 +290,21 @@ a:visited
     box-shadow: 0 0 30px 30px white inset;
 }
 
-#\#form
+#form
 {
     text-align: center;
     padding: 2%;
+}
+
+#comment
+{
+    width: 40em;
+    height: 20em;
+}
+
+#vemail, #vname, #subject
+{
+    width: 20em;
 }
 
 

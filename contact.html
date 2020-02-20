@@ -1,6 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-158851759-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-158851759-1');
+    </script>
+
     <meta charset="UTF-8">
     <title>Contact Me</title>
     <link rel="stylesheet" href="assets/css/styles.css">
@@ -20,25 +30,35 @@
         Contact Me
     </div>
 
-    <div class="contact">
-        <img src="assets/media/linkedinlogo.png" class="symbols" alt="LinkedIn Logo"> <a href="https://www.linkedin.com/in/l-olson">LinkedIn</a><br/>
-        <img src="assets/media/githublogo.png" class="symbols" alt="Github Logo"><a href="https://www.github.com/lo6169" class="symbols">GitHub</a>  <br/>
-        <img src="assets/media/gmaillogo.png" class="symbols" alt="Gmail Logo"><a href="mailto:lolson1214@gmail.com" class="symbols">Email </a> <br/>
+    <div class="container">
+        <div id="feedback">
+            <form action="#" id="form" method="post" name="form">
+                <div class="inputkind">
+                    Name:
+                </div>
+                <input id = "vname" name="vname" placeholder="Your Name" type="text" value=""> <br/> <br/>
+
+                <div class="inputkind">
+                    Email:
+                </div>
+                <input id="vemail" name="vemail" placeholder="Your Email" type="text" value=""> <br/> <br/>
+
+                <div class="inputkind">
+                    Subject
+                </div>
+                <input id="subject" name="sub" placeholder="Subject" type="text" value=""> <br/> <br/>
+
+                <div class="inputkind">
+                    Comments:
+                </div>
+                <textarea id="comment" name="msg" placeholder="Please comment here"></textarea> <br/> <br/>
+
+                <input id="send" name="submit" type="submit" value="Send">
+            </form>
+            <h3><?php include "secure_email_code.php"?></h3>
+        </div>
+        <!-- Feedback Form Ends Here -->
     </div>
-
-    <form method="post" action="mailto:lolsonform@gmail.com" enctype="text/plain" id="#form">
-        Name:<br>
-        <input type="text" name="name"><br>
-
-        E-mail:<br>
-        <input type="text" name="mail"><br>
-
-        Comment:<br>
-        <input type="text" name="comment" size="50"><br><br>
-
-        <input type="submit" value="Send">
-        <input type="reset" value="Reset">
-    </form>
 
 
     <div class="footer">
