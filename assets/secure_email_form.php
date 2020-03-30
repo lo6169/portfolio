@@ -1,3 +1,30 @@
+<?php
+    function test_input($data)
+    {
+        $data = trim($data);
+        $data = stripslashes($data);
+        $ata = htmlspecialchars($data);
+
+        return $data;
+    }
+
+    $vname  = $_POST['vname'];
+    $vemail = $_POST['vemail'];
+    $sub = $_POST['sub'];
+    $comment = $_POST['comment'];
+
+    $vname2 = test_input($vname);
+    $vemail2 = test_input($vemail);
+    $sub2 = test_input($sub);
+    $comment2 = test_input($comment);
+
+    $destination_email = "lolsonform@gmail.com";
+
+    $email_body = "$vemail2  -> $comment2";
+
+    mail($destination_email, $sub2, $email_body);
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -14,7 +41,9 @@
     </ul>
 
     <div class="head">
-        Connect With Me
+        Connect With Me <br/>
+
+        Thanks for emailing me!
     </div>
 
     <div class="head2">
