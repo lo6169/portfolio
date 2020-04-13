@@ -15,7 +15,42 @@
 
     <div class="main" id="main">
         Hi there, my name is Lindsey! <br/>
-        I'm a creator and a coder.
+        I'm <span id="changer"> coder. </span>
+
+
+
     </div>
+
+
+    <script>
+        var words = ["a developer","a software engineer", "driven",
+            "an enthusiast", "creative", "a programmer", "a content creator",
+            "a web developer", "a friend", "an activist", "a creator"];
+        var i = 0;
+        var text = "a coder.";
+        var interval = 2000;
+
+        function _getChangedText()
+        {
+            if (i == words.length-1)
+            {
+                i = 0;
+            }
+            else
+            {
+                i++;
+            }
+            return text.replace(/a coder/, words[i]);
+        }
+
+        function _changeText()
+        {
+            var txt = _getChangedText();
+            document.getElementById("changer").innerHTML = txt;
+        }
+
+        setInterval("_changeText()", interval);
+
+    </script>
 </body>
 </html>
